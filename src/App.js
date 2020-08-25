@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import Sidebar from "./Sidebar";
 
 function App() {
 	return (
-		<div className="App">
-			<h1>hello world</h1>
+		<div className="app">
+			{/* sidebar */}
+			<Sidebar />
+			{/* feed */}
+			{/* widgets */}
 		</div>
 	);
 }
