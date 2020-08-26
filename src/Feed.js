@@ -3,8 +3,8 @@ import "./Feed.css";
 
 function Feed() {
 	return (
-		<div>
-			<div className="feed">
+		<div className="feed">
+			<div className="feed_header">
 				<h1>Home</h1>
 			</div>
 
