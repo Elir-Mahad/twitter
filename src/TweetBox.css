@@ -13,3 +13,31 @@
 	padding: 20px;
 	display: flex;
 }
+
+.tweetBox_input input {
+	flex: 1;
+	/*  This is using the flex width rules.
+        It is telling the input field to take up 
+        all the width that it can.  */
+	margin-left: 20px;
+	font-size: 20px;
+	border: none;
+}
+
+.tweeBox_imageInput {
+	border: none;
+	padding: 10px;
+}
+
+.tweetBox_tweetButton {
+	background-color: var(--twitter-color) !important;
+	border: none !important;
+	color: white !important;
+	font-weight: 900 !important;
+	text-transform: inherit !important;
+	border-radius: 30px !important;
+	width: 80px;
+	height: 30px !important;
+	margin-top: 20px !important;
+	margin-left: auto !important;
+}

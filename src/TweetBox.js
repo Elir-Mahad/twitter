@@ -10,9 +10,14 @@ function TweetBox() {
 				<div className="tweetBox_input">
 					<Avatar src="https://cdnb.artstation.com/p/assets/images/images/029/129/819/large/ander-liza-bandit-pose1.jpg?1596549142" />
 					<input placeholder="what's happening" />
-					{/* <input placeholder="Eneter img url" /> */}
 				</div>
-				<Button>Tweet</Button>
+				<input
+					className="tweeBox_imageInput"
+					placeholder="Eneter img url"
+					type="text"
+					//
+				/>
+				<Button className="tweetBox_tweetButton">Tweet</Button>
 			</form>
 		</div>
 	);
