@@ -14,12 +14,22 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
+//
+
+import Button from "@material-ui/core/Button";
+
 function Sidebar() {
 	return (
 		<div>
 			<h1>Sidebar</h1>
 			<TwitterIcon />
-			<SidebarOption active Icon={HomeIcon} text="Home" />
+			<SidebarOption
+				active
+				// we are passing the prop active here.
+				// This means that when the
+				Icon={HomeIcon}
+				text="Home"
+			/>
 			<SidebarOption Icon={SearchIcon} text="Explore" />
 			<SidebarOption Icon={NotificationsIcon} text="Notifications" />
 			<SidebarOption Icon={MailOutlineIcon} text="Messages" />
@@ -27,6 +37,12 @@ function Sidebar() {
 			<SidebarOption Icon={ListAltIcon} text="Lists" />
 			<SidebarOption Icon={PermIdentityIcon} text="Profile" />
 			<SidebarOption Icon={MoreHorizIcon} text="more" />
+
+			{/*  */}
+			<Button variant="outlined" className="sidebar_tweet" fullWidth>
+				{" "}
+				Tweet{" "}
+			</Button>
 		</div>
 	);
 }

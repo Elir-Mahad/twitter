@@ -21,3 +21,7 @@
 	font-size: 20px;
 	margin-right: 20px;
 }
+
+.sidebarOption_active {
+	color: var(--twitter-color); /* this variable is imported from app.css */
+}
