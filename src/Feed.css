@@ -1,4 +1,15 @@
 .feed {
 	border-right: 1px solid var(--twitter-color);
 	flex: 0.4;
+	min-width: fit-content;
+	overflow-y: scroll;
+}
+
+.feed_header {
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 100;
+	border: 1px solid var(--twitter-color);
+	padding: 15px 20px;
 }
