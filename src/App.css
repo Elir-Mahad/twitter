@@ -1,0 +1,6 @@
+body {
+	/* we are declaring a global variable.
+    A specific color and background color */
+	--twitter-color: #50b7f5;
+	--twitter-background: #e6ecf0;
+}
