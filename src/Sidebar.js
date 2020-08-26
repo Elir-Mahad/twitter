@@ -20,13 +20,14 @@ import Button from "@material-ui/core/Button";
 
 function Sidebar() {
 	return (
-		<div>
-			<h1>Sidebar</h1>
-			<TwitterIcon />
+		<div className="sidebar">
+			<TwitterIcon className="sidebar_twitterIcon" />
 			<SidebarOption
 				active
 				// we are passing the prop active here.
-				// This means that when the
+				// This means that we are on this page
+				// and special css will be put into effect
+				// while we remain on this page.
 				Icon={HomeIcon}
 				text="Home"
 			/>

@@ -1,9 +1,10 @@
 import React from "react";
+import "./Feed.css";
 
 function Feed() {
 	return (
 		<div>
-			<h1>feed</h1>
+			<h1>Home</h1>
 		</div>
 	);
 }

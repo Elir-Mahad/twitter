@@ -1,3 +1,20 @@
+.sidebar {
+	border-right: 1px solid var(--twitter-color);
+	flex: 0.3;
+	/* 	Here we are using a flex to determine
+		how much width a specific component should take.
+		When we are using flexbox for this type of a task,
+		the full width is generally equal to 1.
+		For this project, we have divided this 1 into three parts.
+		The sidebar = 0.3
+		The feed will be = 0.4
+		The widgets will be = 0.3 */
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/* min-width:250px; */
+}
+
 .sidebar_tweet {
 	background-color: var(--twitter-color) !important;
 	border: none !important;
@@ -7,4 +24,11 @@
 	border-radius: 30px !important;
 	height: 50px !important;
 	margin-top: 20px !important;
+}
+
+.sidebar_twitterIcon {
+	color: var(--twitter-color);
+	font-size: 30px !important;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
