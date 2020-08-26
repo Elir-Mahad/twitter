@@ -21,11 +21,11 @@
 	top: 0;
 	background-color: white;
 	z-index: 100;
-	border: 1px solid var(--twitter-color);
+	/* border: 1px solid var(--twitter-color); */
 	padding: 15px 20px;
 }
 
-.feed_header h2 {
+/* .feed_header h2 {
 	font-size: 20px;
 	font-weight: 800;
-}
+} */
