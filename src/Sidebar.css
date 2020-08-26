@@ -1,5 +1,6 @@
 .sidebar {
 	border-right: 1px solid var(--twitter-color);
+	border-left: 1px solid var(--twitter-color);
 	flex: 0.3;
 	/* 	Here we are using a flex to determine
 		how much width a specific component should take.

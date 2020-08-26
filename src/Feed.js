@@ -4,7 +4,16 @@ import "./Feed.css";
 function Feed() {
 	return (
 		<div>
-			<h1>Home</h1>
+			<div className="feed">
+				<h1>Home</h1>
+			</div>
+
+			{/* Tweetbox */}
+
+			{/* post */}
+			{/* post */}
+			{/* post */}
+			{/* post */}
 		</div>
 	);
 }

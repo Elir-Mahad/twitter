@@ -1,0 +1,4 @@
+.feed {
+	border-right: 1px solid var(--twitter-color);
+	flex: 0.4;
+}
