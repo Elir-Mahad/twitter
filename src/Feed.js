@@ -5,6 +5,8 @@ import Post from "./Post";
 
 import { db } from "./firebase.js";
 
+import FlipMove from "react-flip-move";
+
 function Feed() {
 	//! UseState Below
 	const [posts, setPosts] = useState([]);
@@ -31,16 +33,21 @@ function Feed() {
 				<h1>Home</h1>
 			</div>
 			<TweetBox />
-			{posts.map((post) => (
-				<Post
-					displayName={post.displayName}
-					username={post.username}
-					verified={post.verified}
-					text={post.text}
-					avatar={post.avatar}
-					image={post.image}
-				/>
-			))}
+			<FlipMove>
+				{posts.map((post) => (
+					<Post
+						key={post.text}
+						// you can also use post.id, for your key, but to do that you have to first
+						// destructure the setpost useffect doc.data
+						displayName={post.displayName}
+						username={post.username}
+						verified={post.verified}
+						text={post.text}
+						avatar={post.avatar}
+						image={post.image}
+					/>
+				))}
+			</FlipMove>
 		</div>
 	);
 }
