@@ -3,6 +3,7 @@ import "./TweetBox.css";
 
 import { Avatar, Button } from "@material-ui/core";
 import { db } from "./firebase";
+import firebase from "firebase"; // pulling from the module not the file
 
 function TweetBox() {
 	//! useState below
@@ -25,7 +26,8 @@ function TweetBox() {
 				text: tweetMessage,
 				image: tweetImage,
 				avatar:
-					"https://cdna.artstation.com/p/assets/images/images/006/310/372/large/alex-lashko-averageblackmale-by-alexlashko-marmoset-13.jpg?1497593368"
+					"https://cdna.artstation.com/p/assets/images/images/006/310/372/large/alex-lashko-averageblackmale-by-alexlashko-marmoset-13.jpg?1497593368",
+				timestamp: firebase.firestore.FieldValue.serverTimestamp()
 			});
 
 		setTweetMessage("");

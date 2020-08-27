@@ -17,6 +17,8 @@ function Feed() {
 			//
 			.collection("posts")
 			//
+			.orderBy("timestamp", "desc")
+			//
 			.onSnapshot((snapshot) =>
 				setPosts(snapshot.docs.map((doc) => doc.data()))
 			);
