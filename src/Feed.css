@@ -10,7 +10,7 @@
 }
 
 .feed {
-	border-right: 1px solid var(--twitter-color);
+	/* border-right: 1px solid var(--twitter-color); */
 	flex: 0.4;
 	min-width: fit-content;
 	overflow-y: scroll;
