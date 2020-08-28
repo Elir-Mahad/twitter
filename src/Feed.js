@@ -7,18 +7,25 @@ import { db } from "./firebase.js";
 
 import FlipMove from "react-flip-move";
 
+//! -----------------------------------------------END OF IMPORTS
+
 function Feed() {
 	//! UseState Below
-	const [posts, setPosts] = useState([]);
 
-	//! UseEffect
+	const [posts, setPosts] = useState([]);
+	// (posts)  The constant posts contains an array
+	// (setPosts) And we declare that we will mainpulate this array
+	// By wrapping the array in a UseState()
+
+	//! UseEffect - UseEffect runs a piece of code based on a specific condition
+
 	useEffect(() => {
 		db
-			//
+			// Enter the firebase database
 			.collection("posts")
-			//
+			// Get the posts inside firebase
 			.orderBy("timestamp", "desc")
-			//
+			// order the posts based on timestamp in descending order (top post = most recent post)
 			.onSnapshot((snapshot) =>
 				setPosts(snapshot.docs.map((doc) => doc.data()))
 			);

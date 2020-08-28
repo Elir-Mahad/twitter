@@ -1,4 +1,6 @@
 import React, { forwardRef } from "react";
+// notes about forward ref and react flip move are documented in the msn app
+
 import "./Post.css";
 
 // material ui imports
@@ -8,6 +10,8 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+
+//! -----------------------------------------------END OF IMPORTS
 
 // function Post({ displayName, username, verified, text, image, avatar }) {
 const Post = forwardRef(

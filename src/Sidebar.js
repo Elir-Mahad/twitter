@@ -18,6 +18,8 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 import Button from "@material-ui/core/Button";
 
+//! -----------------------------------------------END OF IMPORTS
+
 function Sidebar() {
 	return (
 		<div className="sidebar">
